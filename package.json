@@ -13,6 +13,7 @@
     "socket.io": "*",
     "redis": "*",
     "mongoose": "*",
-    "vows": "*"
+    "vows": "*",
+    "bcrypt": "*"
   }
 }

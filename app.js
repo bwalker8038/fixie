@@ -7,10 +7,21 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , mongoose = require('mongoose')
+  , redis = require('redis');
 
-var app = express();
+// Database
+var datastore = mongoose.createConnection('localhost', 'fixie')
+  , pub = redis.createClient()
+  , sub = redis.createClient();
 
+// Server, Application
+var app = express()
+  , server = http.createServer(app)
+  , io = require('socket.io').listen(server);
+
+  // Configuration
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
