@@ -1,0 +1,18 @@
+{
+  "name": "fixie",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "test": "vows --spec"
+  },
+  "dependencies": {
+    "express": "3.0.0rc4",
+    "jade": "*",
+    "stylus": "*",
+    "socket.io": "*",
+    "redis": "*",
+    "mongoose": "*",
+    "vows": "*"
+  }
+}
