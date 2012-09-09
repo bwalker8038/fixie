@@ -11,5 +11,8 @@ form(action='/users', method='POST')
   br    
   label(for='passwordConfrim') Confirm Password:
   input(type='password', id='passwordConfirm', name='passwordConfirm', value=user.passwordConfirm)
-  br    
+  br
+  label(for='bio') About me:
+  textarea(type='text', id='bio', name='bio', value=user.bio)
+  br
   input(type='submit', value='Register')

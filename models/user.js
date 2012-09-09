@@ -13,6 +13,7 @@ var userSchema = new Schema({
     email: { type: String, unique: true },
     hashedPassword: String,
     salt: String,
+    bio: String,
     dateCreated: {type: String, default: Date.now() }
 });
 
