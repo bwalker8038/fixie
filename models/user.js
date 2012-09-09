@@ -2,10 +2,15 @@ var bcrypt = require('bcrypt')
   , mongoose = require('mongoose')
   , Schema = mongoose.Schema;
 
+
+function validatePresenceOf(value) {
+  return value && value.length;
+};
+
+
 var userSchema = new Schema({
     username: { type: String, unique: true },
-    email: { type: String, unique:true },
-    bio: String,
+    email: { type: String, unique: true },
     hashedPassword: String,
     salt: String,
     dateCreated: {type: String, default: Date.now() }
@@ -21,6 +26,7 @@ userSchema.pre('save', function(next) {
 
 userSchema.virtual('password').set(function(password) {
     this.salt = bcrypt.genSaltSync(10);
+    this._password = password;
     this.hashedPassword = this.encryptPassword(password);
 }).get(function() {
     return this._password;

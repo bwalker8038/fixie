@@ -1,0 +1,10 @@
+h1 Create an Account
+form(action='/users', method='POST')
+  label(for='username') Username:
+  input(type='text', id='username', name='username', value=user.username)
+  label(for='email') Email Address:
+  input(type='text', id='email', name='email', value=user.email)
+  label(for='password') Password:
+  input(type='password', id='password', name='password', value=user.password)
+  input(type='submit', value='Register')
+h2 #{user}

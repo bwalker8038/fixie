@@ -2,10 +2,14 @@
 /*
  * GET users listing.
  */
-var mongoose = require('mongoose')
-  , User = mongoose.model('User');
+var User = require('../models/user').User;
 
-exports.createUser = function(req, res) {
+exports.createUser = function(req, res, next) {
+    res.render('users/new', { user: new User() });
+};
+
+
+exports.createUser_post = function(req, res, next) {
     var user = new User(req.body);
 
     function userSaved() {
@@ -19,9 +23,15 @@ exports.createUser = function(req, res) {
         }
     }
     function userSaveFailed() {
-        res.render('./users/new');
-    }
-
+        res.render('./users/new', {user: user});
+   }
+    user.save(function(err) {
+        if(err) {
+            return next(err);
+        } else {
+            res.send(user);
+        }
+    });
     user.save(function(err) {
         if(err) { 
             userSaveFailed();

@@ -12,7 +12,7 @@ var express = require('express')
   , redis = require('redis');
 
 // Database
-var datastore = mongoose.createConnection('localhost', 'fixie')
+var datastore = mongoose.connect('localhost', 'fixie')
   , pub = redis.createClient()
   , sub = redis.createClient();
 
@@ -50,7 +50,8 @@ var User = require('./models/user').User
 // Routes
 app.get('/', routes.index);
 //app.get('/users', user.list);
-app.get('/users', user.createUser);
+app.get('/users/new', user.createUser);
+app.post('/users', user.createUser_post);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
