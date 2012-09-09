@@ -17,11 +17,19 @@ var userSchema = new Schema({
 });
 
 userSchema.pre('save', function(next) {
-    if(!validatePresenceOf(this.password)) {
+    if(this.password != this.passwordConfirm) {
+        next(new Error('Passwords do not match'));
+    } else if(!validatePresenceOf(this.password)){
         next(new Error('Password is missing'));
     } else {
         next();
     }
+});
+
+userSchema.virtual('passwordConfirm').set(function(password) {
+    this._passwordConfirm = password;
+}).get(function() {
+    return this._passwordConfirm;
 });
 
 userSchema.virtual('password').set(function(password) {

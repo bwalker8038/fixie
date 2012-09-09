@@ -25,13 +25,7 @@ exports.createUser_post = function(req, res, next) {
     function userSaveFailed() {
         res.render('./users/new', {user: user});
    }
-    user.save(function(err) {
-        if(err) {
-            return next(err);
-        } else {
-            res.send(user);
-        }
-    });
+
     user.save(function(err) {
         if(err) { 
             userSaveFailed();
