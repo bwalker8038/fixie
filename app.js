@@ -42,16 +42,12 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-// Models
-var User = require('./models/user').User
-  , Thread = require('./models/thread').Thread
-  , Message = require('./models/message').Message;
-
 var sessions = require('./routes/session');
 
 // Routes
 app.get('/', routes.index);
 app.get('/users/new', user.createUser);
+app.post('/users', user.createUser_post);
 
 app.get('/sessions/new', sessions.newSession);
 app.post('/sessions', sessions.newSession_post);
