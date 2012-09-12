@@ -46,7 +46,7 @@ userSchema.method('encryptPassword', function(password) {
 });
 
 userSchema.method('authenticate', function(plaintext) {
-    return bcrypt.compareSync(plaintext, this.hashed_password);
+    return bcrypt.compareSync(plaintext, this.hashedPassword);
 });
 
 exports.User = mongoose.model('User', userSchema);
