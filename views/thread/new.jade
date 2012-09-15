@@ -1,0 +1,8 @@
+form(action='/threads', method='POST')
+  label(for='title') Thread Name:
+  input(type='text', id='title', name='title', value=thread.title)
+  br
+  label(for='discription') Thread Discription:
+  textarea(type='text', id='discription', name='discription', value=thread.discription)
+  br
+  input(type='submit', value='Create Thread')

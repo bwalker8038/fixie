@@ -42,7 +42,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var sessions = require('./routes/session');
+var sessions = require('./routes/session')
+  , thread = require('./routes/thread');
 
 // Routes
 app.get('/', routes.index);
@@ -52,6 +53,9 @@ app.post('/users', user.createUser_post);
 app.get('/sessions/new', sessions.newSession);
 app.post('/sessions', sessions.newSession_post);
 app.get('/sessions/destroy', sessions.destroySession);
+
+app.get('/threads/new', thread.createThread);
+app.post('/threads', thread.createThread_post);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
