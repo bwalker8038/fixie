@@ -56,7 +56,7 @@ app.get('/sessions/destroy', sessions.destroySession);
 
 app.get('/threads/new', thread.createThread);
 app.post('/threads', thread.createThread_post);
-
+app.get('threads/:id', thread.show);
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

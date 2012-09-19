@@ -4,7 +4,7 @@ exports.createThread = function(req, res) {
     res.render('./thread/new', { thread: new Thread() });
 };
 
-exports.createThread_Post = function(req, res) {
+exports.createThread_post = function(req, res) {
     var thread = new Thread(req.body);
     thread.author = req.session.currentUser;
 
