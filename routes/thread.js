@@ -32,6 +32,8 @@ exports.createThread_post = function(req, res) {
 };
 
 exports.showThread = function(req, res) {
-    res.render('./thread/show');
+    Thread.findOne({_id: id}, function(error, thread) {
+        res.render('./thread/show', {thread: thread });
+    });
 };
 
