@@ -1,11 +1,11 @@
+/* Main Application */
 
 /**
  * Module dependencies.
  */
 
+// Application DSL/Required Libs
 var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
   , mongoose = require('mongoose')
@@ -42,23 +42,32 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var sessions = require('./routes/session')
-  , thread = require('./routes/thread');
-
 
 // Routes
+var routes = require('./routes')
+  , user = require('./routes/user')
+  , sessions = require('./routes/session')
+  , thread = require('./routes/thread');
+
+// Index
 app.get('/', routes.index);
+
+// User Routes
 app.get('/users/new', user.createUser);
 app.post('/users', user.createUser_post);
 
+// Session Routes
 app.get('/sessions/new', sessions.newSession);
 app.post('/sessions', sessions.newSession_post);
 app.get('/sessions/destroy', sessions.destroySession);
 
+// Threads Routes
 app.get('/threads/new', thread.createThread);
 app.post('/threads', thread.createThread_post);
 app.get('/threads/:id', thread.showThread);
 
+
+// Server
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
