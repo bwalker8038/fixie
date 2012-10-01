@@ -45,6 +45,8 @@ app.configure('development', function(){
 var sessions = require('./routes/session')
   , thread = require('./routes/thread');
 
+  var Thread = require('./models/thread').Thread;
+
 // Routes
 app.get('/', routes.index);
 app.get('/users/new', user.createUser);
@@ -56,7 +58,7 @@ app.get('/sessions/destroy', sessions.destroySession);
 
 app.get('/threads/new', thread.createThread);
 app.post('/threads', thread.createThread_post);
-app.get('threads/:id', thread.showThread);
+app.get('/threads/:id', thread.showThread);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
