@@ -45,7 +45,6 @@ app.configure('development', function(){
 var sessions = require('./routes/session')
   , thread = require('./routes/thread');
 
-  var Thread = require('./models/thread').Thread;
 
 // Routes
 app.get('/', routes.index);
