@@ -12,7 +12,7 @@ exports.createThread = function(req, res) {
 
 exports.createThread_post = function(req, res) {
     var thread = new Thread(req.body);
-    thread.author = req.session.currentUser;
+    thread.author = req.session.user._id;
 
     function threadSaved() {
         switch(req.params.format) {

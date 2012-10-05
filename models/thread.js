@@ -5,7 +5,7 @@ var threadSchema = new Schema({
     title: String,
     discription: String,
     messages: [{ type: Schema.Types.ObjectId, ref: 'Message'}],
-    author: [{ type: Schema.Types.ObjectId, ref: 'Author'}],
+    author: [{ type: Schema.Types.ObjectId, ref: 'User'}],
     dateCreated: { type: Date, default: Date.now } 
 });
 
