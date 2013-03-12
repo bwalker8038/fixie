@@ -7,13 +7,16 @@
     "test": "vows --spec"
   },
   "dependencies": {
-    "express": "3.0.0rc4",
+    "express": "*",
     "jade": "*",
     "stylus": "*",
-    "socket.io": "*",
-    "redis": "*",
     "mongoose": "*",
+    "redis": "*",
     "vows": "*",
-    "bcrypt": "*"
+    "bcrypt": "*",
+    "oauth": "*",
+    "socket.io": "*",
+    "session.socket.io": "*",
+    "node-markdown": "*"
   }
 }

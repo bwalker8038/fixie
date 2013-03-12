@@ -1,18 +1,20 @@
 h1 Create an Account
 form(action='/users', method='POST')
-  label(for='username') Username:
-  input(type='text', id='username', name='username', value=user.username)
-  br
-  label(for='email') Email Address:
-  input(type='text', id='email', name='email', value=user.email)
-  br    
-  label(for='password') Password:
-  input(type='password', id='password', name='password', value=user.password)
-  br    
-  label(for='passwordConfrim') Confirm Password:
-  input(type='password', id='passwordConfirm', name='passwordConfirm', value=user.passwordConfirm)
-  br
-  label(for='bio') About me:
-  textarea(type='text', id='bio', name='bio', value=user.bio)
-  br
-  input(type='submit', value='Register')
+  ul.data
+    li
+      label(for='username') Username:
+      input(type='text', id='username', name='username', value=user.username)
+    li
+      label(for='email') Email Address:
+      input(type='text', id='email', name='email', value=user.email)
+    li  
+      label(for='password') Password:
+      input(type='password', id='password', name='password', value=user.password)
+    li    
+      label(for='passwordConfrim') Confirm Password:
+      input(type='password', id='passwordConfirm', name='passwordConfirm', value=user.passwordConfirm)
+    li
+      label(for='bio') About me:
+      textarea(type='text', id='bio', name='bio', value=user.bio)
+  div.actions
+    input(type='submit', value='Register')

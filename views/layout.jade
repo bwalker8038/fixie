@@ -1,13 +1,24 @@
 doctype 5
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/socket.io/socket.io.js')
+    title app
+    link(rel='stylesheet', href='../stylesheets/reset.css')
+    link(rel='stylesheet', href='../stylesheets/style.css')
+    script(src='../socket.io/socket.io.js')
+    script(src='../javascript/libs/jquery.js')
+    script(src='../javascript/application.js')
   body
-      ul.nav
-      li
-        a(href='/sessions/new', title='Sign In') Sign In
-      li
-        a(href='users/new', title='Create Account') Create an Account
+    nav.utility-nav
+      ul
+        if !current_user
+          li
+            a(href='/sessions/new', title='Sign In') Sign In
+          li
+            a(href='users/new', title='Create Account') Create an Account
+        else
+          li
+            a(href='/users/show', title='Account Settings') 
+              = current_user.username 
+          li
+            a(href='/sessions/destroy', title='Logout') Logout
     block content

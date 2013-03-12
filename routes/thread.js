@@ -1,8 +1,22 @@
-var Thread = require('../models/thread').Thread;
+var Thread  = require('../models/thread').Thread
+  , Message = require('../models/message').Message
+  , User    = require('../models/user').User;
 
 exports.showThread = function(req, res) {
-    Thread.findById(req.params.id, function(err, thread) {
-        res.render('./thread/show', {thread: thread});
+    Thread.findById(req.params.id)
+    .populate('messages')
+    .populate('author')
+    .exec(function(err, thread){
+        var opts = {
+            path: 'messages.author',
+            select: 'username'
+        }
+
+        res.render('./thread/show', {
+            title: 'foo', 
+            thread: thread,
+            current_user: req.session.user 
+        });
     });
 };
 
@@ -36,4 +50,3 @@ exports.createThread_post = function(req, res) {
         }
     });
 };
-

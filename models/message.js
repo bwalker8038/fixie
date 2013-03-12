@@ -3,6 +3,7 @@ var mongoose = require('mongoose')
 
 var messageSchema = new Schema({
     body: String,
+    authorName: String,
     author: [{ type: Schema.Types.ObjectId, ref: 'User'}],
     dateCreated: { type: Date, default: Date.now }
 });
