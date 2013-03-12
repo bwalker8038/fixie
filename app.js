@@ -70,6 +70,7 @@ app.post('/sessions', sessions.newSession_post);
 app.get('/sessions/destroy', sessions.destroySession);
 
 // Threads Routes
+app.get('/threads', thread.listThreads);
 app.get('/threads/new', thread.createThread);
 app.post('/threads', thread.createThread_post);
 app.get('/threads/:id', thread.showThread);

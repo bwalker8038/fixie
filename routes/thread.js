@@ -2,6 +2,18 @@ var Thread  = require('../models/thread').Thread
   , Message = require('../models/message').Message
   , User    = require('../models/user').User;
 
+exports.listThreads = function(req, res) {
+    Thread.find({ author: req.session.user._id})
+    .populate('author')
+    .exec(function(err, threads) {
+        console.log(threads);
+        res.render('./thread/index', {
+            current_user: req.session.user,
+            threads: threads
+        });
+    });
+};
+
 exports.showThread = function(req, res) {
     Thread.findById(req.params.id)
     .populate('messages')

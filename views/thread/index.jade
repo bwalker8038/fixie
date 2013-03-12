@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  - threads.forEach(function(thread) {
+    a(href='/threads/' + thread._id)= thread.title
+    p= thread.dateCreated
+    - thread.author.forEach(function(author) {
+      p= author.username
+    - })
+  - })

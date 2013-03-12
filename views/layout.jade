@@ -17,6 +17,8 @@ html
             a(href='users/new', title='Create Account') Create an Account
         else
           li
+            a(href='/threads/new', title='Create a Thread') Create a Thread
+          li
             a(href='/users/show', title='Account Settings') 
               = current_user.username 
           li
