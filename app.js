@@ -63,6 +63,7 @@ app.get('/', routes.index);
 // User Routes
 app.get('/users/new', user.createUser);
 app.post('/users', user.createUser_post);
+app.get('/users/:username', user.showUser);
 
 // Session Routes
 app.get('/sessions/new', sessions.newSession);

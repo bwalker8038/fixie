@@ -1,0 +1,750 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"styles",
+				"stylesheets"
+			],
+			[
+				"payload",
+				"payload(msgs)	http.js"
+			],
+			[
+				"auth",
+				"authorization(fn)	namespace.js"
+			],
+			[
+				"hand",
+				"handshake(fn)	socket.io.js"
+			],
+			[
+				"message",
+				"message()	jasmine.js"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"id",
+				"_id"
+			],
+			[
+				"task",
+				"taskStarted()	socket.js"
+			],
+			[
+				"conso",
+				"console	console.log()"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"position",
+				"position()	1-jquery-1.8.3.js"
+			],
+			[
+				"scroll",
+				"scrollToTop()	global.js"
+			],
+			[
+				"sort",
+				"sortBy"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"valida",
+				"validates_presence_of"
+			],
+			[
+				"be",
+				"BebasNeueRegular"
+			],
+			[
+				"request",
+				"request-appointment-progress"
+			],
+			[
+				"true",
+				"returnTrue()	1-jquery-1.8.3.js"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"base-f",
+				"base-font-color"
+			],
+			[
+				"base",
+				"base-font-color"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"content",
+				"content"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/users/show.jade",
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Unix",
+				"name": "extends ../layout"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 65,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/user.js",
+			"settings":
+			{
+				"buffer_size": 1375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 3909,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"paca",
+				"Preferences: Browse Packages"
+			],
+			[
+				"NODE::",
+				"Nodejs::Default File Settings"
+			],
+			[
+				"node",
+				"Nodejs::Build Completions"
+			],
+			[
+				"js",
+				"JSHint"
+			],
+			[
+				"j",
+				"JSHint"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				":wq",
+				"Bracket Highlighter: Swap Quotes"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				":ew",
+				"Snippet: text-wrap"
+			],
+			[
+				":",
+				":w - Save"
+			],
+			[
+				":we",
+				":w - Save"
+			],
+			[
+				":e",
+				":$ - EOF"
+			],
+			[
+				":qw",
+				"Snippet: jQuery.isWindow"
+			],
+			[
+				"view ",
+				"View: Toggle Side Bar"
+			],
+			[
+				"file b",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Web.config",
+		"/Users/walkeb03/Projects/hibu/Mantis App/WebApp/Themes/ote/source/scss/_global.scss",
+		"/Users/walkeb03/Projects/fixie/views/thread/index.jade",
+		"/Users/walkeb03/Projects/fixie/views/index.jade",
+		"/Users/walkeb03/Projects/fixie/app.js",
+		"/Users/walkeb03/Projects/fixie/public/javascript/application.js",
+		"/Users/walkeb03/Projects/fixie/models/message.js",
+		"/Users/walkeb03/Projects/fixie/views/layout.jade",
+		"/Users/walkeb03/Projects/fixie/package.json",
+		"/Users/walkeb03/Projects/fixie/routes/thread.js",
+		"/Users/walkeb03/Projects/fixie/views/thread/show.jade",
+		"/Users/walkeb03/Projects/fixie/routes/message.js",
+		"/Users/walkeb03/Projects/fixie/routes/session.js",
+		"/Users/walkeb03/Projects/fixie/views/thread/new.jade",
+		"/Users/walkeb03/Projects/fixie/views/thread/edit.jade",
+		"/Users/walkeb03/Projects/fixie/models/user.js",
+		"/Users/walkeb03/Projects/fixie/public/stylesheets/style.css",
+		"/Users/walkeb03/Projects/fixie/public/stylesheets/style.styl",
+		"/Users/walkeb03/Projects/fixie/views/users/new.jade",
+		"/Users/walkeb03/Projects/fixie/routes/index.js",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Views/Product/Index.cshtml",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Themes/emp/source/scss/service-detail.scss",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Themes/emp/source/scss/product-detail.scss",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Views/Product/_Variations.cshtml",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Views/Product/_VariationsNoJS.cshtml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/_form.html.haml",
+		"/Users/walkeb03/Projects/montreal/extension/javascripts/application.js",
+		"/Users/walkeb03/Projects/montreal/extension/stylesheets/style.css",
+		"/Users/walkeb03/Projects/montreal/extension/manifest.json",
+		"/Users/walkeb03/Projects/montreal/extension/javascripts/lib/socket.js",
+		"/Users/walkeb03/Projects/montreal/extension/javascripts/background.js",
+		"/Users/walkeb03/Projects/montreal/extension/background.html",
+		"/Users/walkeb03/Projects/montreal/extension/index.html",
+		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Themes/emp/source/scss/global.scss",
+		"/Users/walkeb03/Projects/montreal/public/javascripts/application.js",
+		"/Users/walkeb03/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/walkeb03/Desktop/people-grid.jpg",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/event.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/services_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/layouts/_navigation.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/config/routes.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/index.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/events/show.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/sessions_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/users_controller.rb",
+		"/Users/walkeb03/Projects/montreal/a.js",
+		"/Users/walkeb03/Library/Application Support/Sublime Text 2/Packages/Nodejs/Nodejs.sublime-settings",
+		"/Users/walkeb03/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/Users/walkeb03/Projects/hibu/mockups/index.html",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Search/_SearchBar.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/home.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/checkout.js",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/product-detail.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/login.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/contact-us.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/checkout.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/global.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/service-detail.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/cart.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/service.js",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_global.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/App_Start/BundleConfig.cs",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/index.html.html",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_service_listing.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_product_listing.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_Z-variables.scss",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/service.rb",
+		"/Users/walkeb03/Dropbox/rails3-mongoid-devise/app/views/services/show.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/assets/stylesheets/application.css.scss",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/service_request.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/events_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/service_requests_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/helpers/events_helper.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/application_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/show.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/user.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/service_requests/_form.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/temporary_event.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/Gemfile",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/service_requests/new.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/events/_form.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/new.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/services/edit.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/controllers/services_controller_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/log/development.log",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/assets/stylesheets/services.css.scss",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/businesses/_form.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/helpers/services_helper.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/businesses/edit.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/businesses/index.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/businesses/new.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/views/businesses/show.html.haml",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/factories/services.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/models/services_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/requests/services_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/routing/services_routing_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/controllers/businesses_controller_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/factories/businesses.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/models/business_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/requests/businesses_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/spec/routing/businesses_routing_spec.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/models/business.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/helpers/businesses_helper.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/controllers/businesses_controller.rb",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/app/assets/stylesheets/businesses.css.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_search-results.scss",
+		"/Users/walkeb03/Projects/rails3-mongoid-devise/config/initializers/omniauth.rb",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_checkout.scss",
+		"/Users/walkeb03/Projects/augusta/Gemfile",
+		"/Users/walkeb03/Downloads/ecailles/ecailles.png",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Checkout/Receipt.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Shared/DisplayTemplates/ReviewShoppingCartItem.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Shared/DisplayTemplates/ReviewShoppingCartMerchantOrder.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Checkout/Review.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Checkout/_CheckoutLayout.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Shared/_Layout.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_my_account.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Shared/EditorTemplates/ConsumerAddressViewModel.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Views/Account/_Login.cshtml",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_login.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/underscore.js",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/css/_jquery-ui-1.9.2.custom.css",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/Z-jquery-extensions.js",
+		"/Users/walkeb03/Projects/obtvse/app/views/pages/work.erb",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/jquery.validate.unobtrusive.js",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_home.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/production/scss/site.scss",
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/global/scss/_reset.scss"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/walkeb03/Projects/hibu/Mantis App/WebApp",
+			"/Users/walkeb03/Projects/rails3-mongoid-devise",
+			"/Users/walkeb03/Projects/hibu/trigger/WebApp/",
+			"/Users/walkeb03/Projects/hibu/trigger/WebApp/Themes/emp/Css/partials"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"social",
+			"clear: left",
+			"soc",
+			"remote",
+			"social",
+			"$el",
+			"body",
+			"thread",
+			"description",
+			"store-name",
+			"option",
+			"			\n",
+			"store",
+			"merchan",
+			"store",
+			"product-descr",
+			".85em",
+			"$arrow",
+			">>>>",
+			" \n",
+			"time",
+			"search-",
+			"results",
+			".results",
+			"bundler",
+			"bundle",
+			"appointment-date-time",
+			"important",
+			"container",
+			":after",
+			"catalog-",
+			"bundle",
+			"navigator.geolocation",
+			"geo",
+			"location",
+			"ui-state-focus",
+			"======",
+			"typeAhead",
+			"var",
+			".js",
+			";\n",
+			":Service",
+			"Service",
+			"@Service",
+			"Service",
+			"Business",
+			"Businesses",
+			"Business",
+			"name",
+			"user",
+			"defualt",
+			"width: 30%",
+			"width: 30",
+			"4px",
+			"width",
+			",\n",
+			"width",
+			"tabcontent",
+			"-label",
+			"                methods.mapAppointmentProgress(inputs);\n",
+			">>>>>>",
+			"submit",
+			"section",
+			"());",
+			"configureServiceAppointmentCalendarPicker",
+			"operat",
+			"submit",
+			"inset",
+			"input",
+			".inner",
+			"&[",
+			"    -",
+			"\n.",
+			"    ",
+			"webkit",
+			"    ",
+			"tabs",
+			"zindex",
+			"z-index",
+			"content",
+			"position",
+			"60px",
+			": ",
+			"span",
+			"pico",
+			"Backbone.sync",
+			"#services-category-nav-big {",
+			"(startColorstr=#99000000, ",
+			"background-color",
+			"service-tile-label",
+			"rgb(245, 245, 245)",
+			"service-tile-label",
+			"Co He",
+			"CO He",
+			"preview"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ui",
+			"message",
+			"",
+			":service",
+			"service",
+			"@service",
+			"service",
+			"Service",
+			"Services",
+			"Service",
+			"-display"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/users/show.jade",
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"auto_name": "extends ../layout",
+							"is_xml": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "models/user.js",
+					"settings":
+					{
+						"buffer_size": 1375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 3909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2171,
+								2171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 705.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 103.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"product-detail",
+				"Themes/emp/source/scss/product-detail.scss"
+			],
+			[
+				"index.html",
+				"Views/Product/Index.cshtml"
+			],
+			[
+				"bundle",
+				"App_Start/BundleConfig.cs"
+			],
+			[
+				"variables.scss",
+				"Themes/emp/source/scss/_Z-variables.scss"
+			],
+			[
+				"global.js",
+				"Themes/emp/source/js/global.js"
+			],
+			[
+				"service_detail.scss",
+				"Themes/emp/source/scss/_service_detail.scss"
+			],
+			[
+				"service_dt",
+				"Themes/emp/css/partials/_service_details.scss"
+			],
+			[
+				"",
+				"WebConfigs/Web_UAT3_US.config"
+			],
+			[
+				"_market",
+				"Themes/emp/Css/partials/_market_selector.scss"
+			],
+			[
+				"threa",
+				"routes/thread.js"
+			],
+			[
+				"mess",
+				"routes/message.js"
+			],
+			[
+				"message",
+				"models/message.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true
+}

@@ -35,6 +35,16 @@ exports.createUser_post = function(req, res, next) {
     });
 };
 
+exports.showUser = function(req, res, next) {
+  User.find({ 'username': req.params.username}, function(err, user) {
+    res.render('./users/show', {
+      title: user.username,
+      user: user,
+      current_user: req.session.user
+    });
+  });
+};
+
 exports.list = function(req, res){
   res.send("respond with a resource");
 };
