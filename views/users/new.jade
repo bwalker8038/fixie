@@ -1,5 +1,5 @@
 h1 Create an Account
-form(action='/users', method='POST')
+form(action='/users', enctype='multipart/form-data', method='POST')
   ul.data
     li
       label(for='username') Username:
@@ -13,6 +13,9 @@ form(action='/users', method='POST')
     li    
       label(for='passwordConfrim') Confirm Password:
       input(type='password', id='passwordConfirm', name='passwordConfirm', value=user.passwordConfirm)
+    li
+      label(for='avatar') Upload an Avatar:
+      input(type='file', id='avatar', name='avatar', value=user.avatar)
     li
       label(for='bio') About me:
       textarea(type='text', id='bio', name='bio', value=user.bio)

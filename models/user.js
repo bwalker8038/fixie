@@ -14,6 +14,7 @@ var userSchema = new Schema({
     hashedPassword: String,
     salt: String,
     bio: String,
+    avatar: String,
     dateCreated: {type: String, default: Date.now() }
 });
 
