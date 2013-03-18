@@ -8,11 +8,10 @@ block content
   -	})
 
   .message-list	
-    //- p= thread.messages
     - thread.messages.forEach(function(message) {
       .message
         p !{message.body}
-        span.author= message.authorName
+        span.author= message.author
         span.date= (message.dateCreated.toLocaleDateString() + " " + message.dateCreated.toLocaleTimeString())
     - })
   .new-message

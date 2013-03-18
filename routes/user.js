@@ -12,22 +12,12 @@ exports.createUser = function(req, res, next) {
 
 exports.createUser_post = function(req, res, next) {
     var user = new User(req.body);
-
-    fs.readFile(req.files.avatar.path, function(err, data) {
-      var newPath = __dirname + '/uploads/' + req.files.avatar.name;
-      fs.writeFile(newPath, data, function(err, data) {
+    user.saveAvatar(req.files.avatar, function() {
+      user.save(function(err){
         if(err) {
-          console.log(err);
+          userSaveFailed();
         } else {
-          user.avatar = '/' + req.files.avatar.name;
-
-          user.save(function(err) {
-            if(err) { 
-                userSaveFailed();
-            } else {
-                userSaved();
-            }
-          });
+          userSaved();
         }
       });
     });

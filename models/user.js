@@ -1,4 +1,5 @@
-var bcrypt = require('bcrypt')
+var fs = require('fs')
+  , bcrypt = require('bcrypt')
   , mongoose = require('mongoose')
   , Schema = mongoose.Schema;
 
@@ -50,4 +51,19 @@ userSchema.method('authenticate', function(plaintext) {
     return bcrypt.compareSync(plaintext, this.hashedPassword);
 });
 
+userSchema.method('saveAvatar', function(img, next) {
+    var uploadPath = __dirname + '/../uploads/' + img.name
+      , self = this;
+    fs.readFile(img.path, function(err, data) {
+        fs.writeFile(uploadPath, data, function(err, data) {
+            if(err) {
+                console.log({ error: 'an error occurred uploading the image' });
+                console.log(err);
+            } else {
+                self.avatar = '/' + img.name;
+            }
+            next();
+        });
+    });
+})
 exports.User = mongoose.model('User', userSchema);
