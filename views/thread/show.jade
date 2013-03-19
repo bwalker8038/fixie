@@ -11,7 +11,10 @@ block content
     - thread.messages.forEach(function(message) {
       .message
         p !{message.body}
-        span.author= message.author
+        - message.author.forEach(function(author) {
+          span.author= author.username
+          img.thumb(src=author.avatar, width="40px")
+        - });
         span.date= (message.dateCreated.toLocaleDateString() + " " + message.dateCreated.toLocaleTimeString())
     - })
   .new-message

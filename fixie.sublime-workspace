@@ -104,27 +104,18 @@
 	"buffers":
 	[
 		{
-			"file": "views/users/show.jade",
+			"file": "models/message.js",
 			"settings":
 			{
-				"buffer_size": 43,
-				"line_ending": "Unix",
-				"name": "extends ../layout"
-			}
-		},
-		{
-			"file": "views/index.jade",
-			"settings":
-			{
-				"buffer_size": 65,
+				"buffer_size": 265,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models/user.js",
+			"file": "models/thread.js",
 			"settings":
 			{
-				"buffer_size": 1375,
+				"buffer_size": 395,
 				"line_ending": "Unix"
 			}
 		},
@@ -132,7 +123,23 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 3909,
+				"buffer_size": 3869,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/thread/show.jade",
+			"settings":
+			{
+				"buffer_size": 611,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 408,
 				"line_ending": "Unix"
 			}
 		}
@@ -143,6 +150,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"PACK",
+				"Package Control: Install Package"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -249,25 +260,30 @@
 	},
 	"file_history":
 	[
+		"/Users/walkeb03/Projects/fixie/routes/thread.js",
+		"/Users/walkeb03/Projects/fixie/views/thread/show.jade",
+		"/Users/walkeb03/Projects/fixie/views/thread/index.jade",
+		"/Users/walkeb03/Projects/fixie/views/users/new.jade",
+		"/Users/walkeb03/Projects/fixie/views/users/show.jade",
+		"/Users/walkeb03/Projects/fixie/views/index.jade",
+		"/Users/walkeb03/Projects/fixie/models/user.js",
+		"/Users/walkeb03/Projects/fixie/routes/user.js",
+		"/Users/walkeb03/Projects/fixie/routes/session.js",
+		"/Users/walkeb03/Projects/fixie/uploads/me.jpg",
+		"/Users/walkeb03/Projects/fixie/app.js",
+		"/Users/walkeb03/Projects/fixie/routes/uploads/undefined",
+		"/Users/walkeb03/Projects/fixie/routes/uploads",
 		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Web.config",
 		"/Users/walkeb03/Projects/hibu/Mantis App/WebApp/Themes/ote/source/scss/_global.scss",
-		"/Users/walkeb03/Projects/fixie/views/thread/index.jade",
-		"/Users/walkeb03/Projects/fixie/views/index.jade",
-		"/Users/walkeb03/Projects/fixie/app.js",
 		"/Users/walkeb03/Projects/fixie/public/javascript/application.js",
 		"/Users/walkeb03/Projects/fixie/models/message.js",
 		"/Users/walkeb03/Projects/fixie/views/layout.jade",
 		"/Users/walkeb03/Projects/fixie/package.json",
-		"/Users/walkeb03/Projects/fixie/routes/thread.js",
-		"/Users/walkeb03/Projects/fixie/views/thread/show.jade",
 		"/Users/walkeb03/Projects/fixie/routes/message.js",
-		"/Users/walkeb03/Projects/fixie/routes/session.js",
 		"/Users/walkeb03/Projects/fixie/views/thread/new.jade",
 		"/Users/walkeb03/Projects/fixie/views/thread/edit.jade",
-		"/Users/walkeb03/Projects/fixie/models/user.js",
 		"/Users/walkeb03/Projects/fixie/public/stylesheets/style.css",
 		"/Users/walkeb03/Projects/fixie/public/stylesheets/style.styl",
-		"/Users/walkeb03/Projects/fixie/views/users/new.jade",
 		"/Users/walkeb03/Projects/fixie/routes/index.js",
 		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Views/Product/Index.cshtml",
 		"/Users/Shared/Projects/eMP/mantis/app/WebApp/Themes/emp/source/scss/service-detail.scss",
@@ -371,12 +387,7 @@
 		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_login.scss",
 		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/underscore.js",
 		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/css/_jquery-ui-1.9.2.custom.css",
-		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/Z-jquery-extensions.js",
-		"/Users/walkeb03/Projects/obtvse/app/views/pages/work.erb",
-		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/jquery.validate.unobtrusive.js",
-		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/scss/_home.scss",
-		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/production/scss/site.scss",
-		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/global/scss/_reset.scss"
+		"/Users/walkeb03/Projects/hibu/mantis app/WebApp/Themes/emp/source/js/lib/Z-jquery-extensions.js"
 	],
 	"find":
 	{
@@ -384,7 +395,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"/Users/walkeb03/Projects/hibu/Mantis App/WebApp",
@@ -398,6 +409,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"store-name",
+			"store-fix",
 			"social",
 			"clear: left",
 			"soc",
@@ -521,30 +534,28 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/users/show.jade",
+					"file": "models/message.js",
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 265,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								43,
-								43
+								232,
+								232
 							]
 						],
 						"settings":
 						{
-							"auto_name": "extends ../layout",
-							"is_xml": false,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -554,23 +565,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "views/index.jade",
+					"file": "models/thread.js",
 					"settings":
 					{
-						"buffer_size": 65,
+						"buffer_size": 395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								78,
+								78
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -580,46 +591,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "models/user.js",
-					"settings":
-					{
-						"buffer_size": 1375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 3909,
+						"buffer_size": 3869,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2171,
-								2171
+								2516,
+								2516
 							]
 						],
 						"settings":
@@ -629,7 +612,63 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 705.0,
+						"translation.y": 1276.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/thread/show.jade",
+					"settings":
+					{
+						"buffer_size": 611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -17,6 +17,7 @@
     "oauth": "*",
     "socket.io": "*",
     "session.socket.io": "*",
-    "node-markdown": "*"
+    "node-markdown": "*",
+    "underscore": "*"
   }
 }

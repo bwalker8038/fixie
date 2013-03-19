@@ -16,7 +16,6 @@ exports.listThreads = function(req, res) {
 
 exports.showThread = function(req, res) {
     Thread.findById(req.params.id)
-    .populate('messages')
     .populate('messages.author')
     .populate('author')
     .exec(function(err, thread){

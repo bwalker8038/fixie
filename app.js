@@ -14,6 +14,7 @@ var express = require('express')
   , path = require('path')
   , mongoose = require('mongoose')
   , redis = require('redis')
+  , underscore = require('underscore')
   , markdown = require('node-markdown').Markdown;
 
 // Database
@@ -84,50 +85,43 @@ server.listen(app.get('port'), function() {
 
 
 // Models
-var Message = require('./models/message').Message
-  , User    = require('./models/user').User
-  , Thread  = require('./models/thread').Thread;
+var User   = require('./models/user').User
+  , Thread = require('./models/thread').Thread;
 
 // Message Methods
 var saveMessage = function(socket, data) {
-  var message = new Message(data);
-  
-  Thread.findById(data.room.split('/')[2], function(err, thread) {
-        thread.messages.push(message._id);
-
-        thread.save(function(err){
-            if(err) {
-              util.log('\033[32m'+'info: \033[0m '+err);
-            } else {
-              util.log('\033[32m'+'info: \033[0m thread saved');
-            }
-          });
+  Thread.findById(data.room.split('/')[2])
+  .populate('messages.author')
+  .exec(function(err, thread) {
+    thread.messages.push({
+      body: data.body,
+      author: data.author
+    });
+    thread.save(function(err){
+        if(err) {
+          util.log('\033[32m'+'info: \033[0m '+err);
+        } else {
+          util.log('\033[32m'+'info: \033[0m thread saved');
+          broadcastMessage(socket, data);
+        }
       });
-  
-  message.save(function(err) {
-    if(err) {
-      util.log('\033[32m'+'info: \033[0m '+err);
-    } else {
-      util.log('\033[32m'+'info: \033[0m message saved');
-      broadcastMessage(socket, data);
-    } 
   });
 };
 
 var broadcastMessage = function(socket, data) {
   io.sockets.in(data.room).emit('message', {
     body:        data.body,
-    author:      data.authorName,
+    author:      data.username,
+    avatar:      data.avatar,
     dateCreated: new Date,
     room:        data.room
   });
-}
+};
 
 var subscribe = function(socket, data) {
   socket.broadcast.emit('addroom', { room: data.room});
   socket.join(data.room);
 }
-
 
 //Socket Connection
 sessionSockets.on('connection', function (err, socket, session) {
@@ -137,6 +131,7 @@ sessionSockets.on('connection', function (err, socket, session) {
       data.body = markdown(data.body);
       data.author = session.user._id;
       data.authorName = session.user.username;
+      data.avatar = session.user.avatar;
       saveMessage(socket, data);
   });
 
