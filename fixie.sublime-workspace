@@ -123,7 +123,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 3869,
+				"buffer_size": 3921,
 				"line_ending": "Unix"
 			}
 		},
@@ -395,7 +395,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/walkeb03/Projects/hibu/Mantis App/WebApp",
@@ -534,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -594,15 +594,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 3869,
+						"buffer_size": 3921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2516,
-								2516
+								3266,
+								3266
 							]
 						],
 						"settings":
@@ -612,7 +612,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1276.0,
+						"translation.y": 1443.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -128,7 +128,7 @@ sessionSockets.on('connection', function (err, socket, session) {
   util.log('\033[32m'+'info: \033[0m Connection Established');
 
   socket.on('message', function(data) {
-      data.body = markdown(data.body);
+      data.body = markdown(data.body, true, "p|strong|span|img|href|title|style|code|a");
       data.author = session.user._id;
       data.authorName = session.user.username;
       data.avatar = session.user.avatar;
